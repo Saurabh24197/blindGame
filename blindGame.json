@@ -1,0 +1,90 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "blind game",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MoveDirection",
+                    "slots": [
+                        {
+                            "name": "direction",
+                            "type": "direction"
+                        }
+                    ],
+                    "samples": [
+                        "move {direction}"
+                    ]
+                },
+                {
+                    "name": "useItem",
+                    "slots": [],
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "direction",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "right"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "left"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "backward"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "forward"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Item",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "coin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ball"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "key"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
